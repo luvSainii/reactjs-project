@@ -58,7 +58,9 @@ body{
     font-size: 1.5rem;
 }
 .read-more{
-    color:#12b0e8
+    color:#12b0e8;
+    cursor: pointer;
+    
 }
 .btn-red{
     margin-top: 18px;
