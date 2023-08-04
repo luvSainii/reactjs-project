@@ -22,11 +22,11 @@ const Random = () => {
         fetchData();
     }
     return (
-        <div className="w-1/2 h-[450px] bg-green-500 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px]">
-            <h2 className='text-3xl underline uppercase font-bold'>A RANDOM GIF</h2>
+        <div className="w-1/2 bg-green-500 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px]">
+            <h2 className='text-2xl mt-[15px] underline uppercase font-bold'>A RANDOM GIF</h2>
 
-            <div className='w-[40px] h-[30px]'>{loading === true ? <Spinner/> :  <img src={gif} alt="" />}
-</div>
+            {loading ? (<Spinner />) : (<img src={gif} alt="" />)}
+
             <button onClick={gifHandler} className='w-1/4 bg-white text-lg py-2 rounded-lg mb-[20px]'>Generate</button>
         </div>
     )
